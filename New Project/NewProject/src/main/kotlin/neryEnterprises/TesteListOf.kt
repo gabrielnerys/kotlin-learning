@@ -22,15 +22,3 @@ fun main() {
     employees.groupBy { it.employment }.forEach{ println(it) }
 
 }
-
-data class Employee(
-    val name: String,
-    val salary: Double,
-    val employment: String
-) {
-    override fun toString(): String =
-        """
-            Name:   $name
-            Salary: $salary
-        """.trimIndent()
-}
