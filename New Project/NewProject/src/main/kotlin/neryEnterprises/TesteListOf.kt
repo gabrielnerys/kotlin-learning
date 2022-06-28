@@ -12,6 +12,10 @@ fun main() {
     println("------------")
 
     println(employees.find { it.name == "Roberto" })
+
+    println("------------")
+
+    employees.sortedBy { it.name }.forEach{ println(it) }
 }
 
 data class Employee(
