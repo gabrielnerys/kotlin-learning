@@ -8,10 +8,8 @@ fun main() {
     }
     println("------------")
 
-    salaries.sort()
-
-    println("O maior salário é ${salaries[2]}")
-    println("O menor salário é ${salaries[0]}")
+    println("O maior salário é ${salaries.maxOrNull()}")
+    println("O menor salário é ${salaries.minOrNull()}")
     println("A média salarial é ${salaries.average()}")
 
     println("------------")
