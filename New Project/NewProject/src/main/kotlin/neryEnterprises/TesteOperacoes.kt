@@ -17,4 +17,6 @@ fun main() {
     val filterSalaries = salaries.filter { it > 2000.0 }
 
     println(filterSalaries)
+
+    filterSalaries.forEach{ println(it) }
 }
