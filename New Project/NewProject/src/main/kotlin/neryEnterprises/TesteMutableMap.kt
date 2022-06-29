@@ -12,4 +12,14 @@ fun main() {
     management.create(miranda.name, miranda)
 
     println(management.findById(gabriel.name))
+
+    println("------------")
+
+    management.getAll().forEach { println(it) }
+
+    println("------------")
+
+    management.remove(roberto.name)
+    management.getAll().forEach { println(it) }
+
 }
